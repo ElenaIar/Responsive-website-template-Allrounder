@@ -1,0 +1,96 @@
+footer
+	.container-horizontal.footer_bgc
+		.container-center
+			.about
+				h5 About us
+				.about_img_wrap
+					img(src="img/footer_img.jpg" alt="alt")
+				p.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque. Quisque non luctus sem.
+				a(href="#") Read More »
+			.link_block
+				h5 Link block
+				ul
+					li
+						a(href="#") Lorem ipsum dolor sit
+					li
+						a(href="#") Amet consectetur
+					li
+						a(href="#") Praesent vel sem id
+					li
+						a(href="#") Curabitur hendrerit est
+					li
+						a(href="#") Aliquam eget erat nec sapien
+					li
+						a(href="#") Cras id augue nunc
+					li
+						a(href="#") In nec justo non
+					li
+						a(href="#") Vivamus mollis enim ut
+					li
+						a(href="#") Curabitur hendrerit est
+			.from_the_blog
+				h5 From the blog
+				.blog_post
+					h6 Post title
+					p.date Friday, 6th April 2000
+					p.
+						Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+					a(href="#") Read More »
+				h6 Post title
+				p.date Friday, 6th April 2000
+				p.
+					Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+				a(href="#") Read More »
+			.contact
+				h5 Contact us
+				p Tel:
+					a(href="tel:xxxxx xxxxxxxxxx")  xxxxx xxxxxxxxxx
+				p Fax: 
+					a(href="tel:xxxxx xxxxxxxxxx") xxxxx xxxxxxxxxx
+				p.contact-email Email:
+					a(href="mailto:contact@mydomain.com")  
+						span contact@mydomain.com
+				h5 Newsletter
+				form(action="#")
+					.form-group
+						input(type="password" class="form-control" id="name" placeholder="Name")
+					.form-group
+						input(type="email" class="form-control" id="email" placeholder="Email")
+					button(type="submit" class="btn btn-default") Submit
+	.container-horizontal.copyright
+		.container-center
+			.row
+				.col-md-8.col-sm-8.col-xs-12
+					p.
+						Copyright © 2013 - All Rights Reserved - Domain Name
+				.col-md-4.col-sm-4.col-xs-12
+					p.templ_name.
+						Template by OS Templates
+
+//jquery
+script(type="text/javascript" src="js/jquery-1.11.3.js")
+
+//Owl
+script(src="add/OwlCarousel2-2.2.1/dist/owl.carousel.min.js")
+script.
+	$(document).ready(function(){
+		$(".owl-carousel").owlCarousel( {
+			items: 1,
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 20000,
+			autoplayHoverPause: true,
+			//dots: true,
+			nav: true,
+		});
+	});
+
+<!--[if gt IE 7]>	
+script(type="text/javascript" src="add/placeholder_ie.js") 
+script(type="text/javascript" src="add/respond.min.js")  
+<![endif]-->
+//equalheight
+script(src="add/equalheight/jquery.equalheight.js")
+//common
+script(type="text/javascript" src="js/common.js")

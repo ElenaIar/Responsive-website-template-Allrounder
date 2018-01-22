@@ -1,0 +1,21 @@
+@mixin transform($rotatex, $rotatey){
+	-moz-transform: translate($rotatex, $rotatey);
+    -ms-transform: translate($rotatex, $rotatey);
+    -webkit-transform: translate($rotatex, $rotatey);
+    -o-transform: translate($rotatex, $rotatey);
+    transform: translate($rotatex, $rotatey);
+}
+
+@mixin box-sizing{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;    
+    -webkit-box-sizing: border-box;
+}
+
+@mixin border-radius($num){
+	border-radius: $num;
+	-moz-border-radius: $num;
+	-webkit-border-radius: $num;
+	-ms-border-radius: $num;
+	-o-border-radius: $num;
+}
